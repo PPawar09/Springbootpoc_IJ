@@ -12,6 +12,7 @@ public class RestStudentServiceMain {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(
 				RestStudentServiceMain.class, args);
-		//System.out.println(ctx);
+		System.out.println(ctx);
+		System.out.println("Hello Added to See Commit");
 	}
 }
