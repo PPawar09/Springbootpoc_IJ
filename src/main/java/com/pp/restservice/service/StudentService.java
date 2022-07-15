@@ -104,19 +104,4 @@ public class StudentService {
 
 		return course;
 	}
-
-	public Course addCourse2(String studentId, Course course) {
-		Student student = retrieveStudent(studentId);
-
-		if (student == null) {
-			return null;
-		}
-
-		String randomId = new BigInteger(130, random).toString(32);
-		course.setId(randomId);
-
-		student.getCourses().add(course);
-
-		return course;
-	}
 }
